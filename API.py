@@ -14,7 +14,7 @@ def get_query_string():
         data = dict()
         for k in keys:
             data[k] = streams[k].url 
-        return jsonify(data)
+        return data
         
     except streamlink.NoPluginError:
         return None
